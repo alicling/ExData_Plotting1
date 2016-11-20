@@ -5,7 +5,6 @@
 > head(subsetdata)
 > globalactivepower<-as.numeric(subsetdata$Global_active_power)
 > datetime <- strptime(paste(subsetdata$Date, subsetdata$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
-> png("plot3.png", width=480, height=480)
 > submetering1<-as.numeric(subsetdata$Sub_metering_1)
 > submetering2<-as.numeric(subsetdata$Sub_metering_2)
 > submetering3<-as.numeric(subsetdata$Sub_metering_3)
